@@ -49,8 +49,8 @@ def index():
 
 @app.route("/session",  methods=['POST'])
 def intro():
-    a = request.form.get("program")
-    return "You selected "  + str(a)
+    a,b,c = request.form.get("program,program1,program2")
+    return "You selected "  + str(a,b,c)
 
 
 if __name__ == "__main__":
